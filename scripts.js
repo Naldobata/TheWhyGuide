@@ -1,20 +1,44 @@
-var btnmenu = document.getElementById("btnmenu");
-var menu = document.getElementById("slide-menu");
+const btn = document.getElementById("menuBtn");
+const menu = document.getElementById("mobileMenu");
 
-// Abrir ou fechar menu ao clicar no botão
-btnmenu.addEventListener("click", function (e) {
-  menu.classList.toggle("on");
-  e.stopPropagation(); // impede que o clique "suba" para o document
+btn.addEventListener("click", (e) => {
+  menu.classList.toggle("open");
+   e.stopPropagation();
 });
 
-// Fechar menu ao clicar fora
 document.addEventListener("click", function (e) {
-  if (menu.classList.contains("on")) {
-    menu.classList.remove("on");
+  if (menu.classList.contains("open")) {
+    menu.classList.remove("open");
   }
 });
 
-// Impede que o clique dentro do menu feche ele
 menu.addEventListener("click", function (e) {
   e.stopPropagation();
+});
+
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("menuOverlay");
+const menuLinks = mobileMenu.querySelectorAll("a");
+
+function openMenu() {
+  mobileMenu.classList.add("active");
+  overlay.classList.add("active");
+}
+
+function closeMenu() {
+  mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
+}
+
+menuBtn.addEventListener("click", openMenu);
+overlay.addEventListener("click", closeMenu);
+
+/* ITEM ATIVO AUTOMATICO */
+const currentPath = window.location.pathname;
+
+menuLinks.forEach((link) => {
+  if (link.getAttribute("href") === currentPath) {
+    link.classList.add("active");
+  }
 });

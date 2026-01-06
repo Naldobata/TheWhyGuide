@@ -18,109 +18,171 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
     <title>TheWhyGuide</title>
   </head>
   <body>
-    <div id="slide-menu" class="slide-menu ">
-      <div>
-        <p>Tech</p>
-      </div>
-    </div>
-
-    <header>
-      <div class="logo">
-        <a href="index.html" id="logo-link">TheWhyGuide</a>
-      </div>
-      <div class="menu">
-        <i class="fa-solid fa-bars" id="btnmenu"></i>
-      </div>
+    <header class="header">
+      <div class="logo">TheWhyGuide</div>
+      <button id="menuBtn">
+        <span class="material-symbols-outlined"> menu</span>
+      </button>
     </header>
 
+    <nav id="mobileMenu" class="mobile-menu">
+      <a href="/">
+        <span class="material-symbols-outlined"> home </span>
+        <span>Home</span>
+      </a>
+
+      <a href="/everyday-why.html">
+        <span class="material-symbols-outlined">help</span>
+        <span>Everyday Why</span>
+      </a>
+
+      <a href="/tech.html">
+        <span class="material-symbols-outlined">smartphone</span>
+        <span>Tech Problems</span>
+      </a>
+
+      <a href="/about.html">
+        <span class="material-symbols-outlined">info</span>
+        <span>About</span>
+      </a>
+
+      <a href="/contact.html">
+        <span class="material-symbols-outlined">mail</span>
+        <span>Contact</span>
+      </a>
+    </nav>
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+
+
     <main class="content">
-      <p>
-        The Why Guide helps you understand why things happen and how they work.
-        We explain common everyday questions and tech problems in a clear and
-        simple way.
-      </p>
+      <section class="hero">
+        <h1>Understand Why Things Happen</h1>
+        <p>
+          Clear and simple explanations for everyday questions and common tech
+          problems.
+        </p>
+        <a href="#categories" class="btn">Explore Articles</a>
+      </section>
 
-      <h1>Categories</h1>
-      <h2 style="margin-top: 20px;">1. <a style="color: #5a3e2b;" href="everydaywhy.html">Everyday Why</a></h2>
+      <section id="categories" class="categories container">
+        <h1>Categories</h1>
+        <div class="card">
+          <h3>
+            <a id="categories-link" href="everydaywhy.html">Everyday Why</a>
+          </h3>
+          <p>
+            Answers to common questions about life, health and daily habits.
+          </p>
+          <p></p>
+          <ul>
+            <li>
+              <a
+                id="categories-link"
+                href="why-does-my-phone-get-hot-while-charging.html"
+                >Why does my phone get hot when charging?</a
+              >
+            </li>
+            <li>Why do my eyes twitch?</li>
+            <li>Why do lights flicker?</li>
+          </ul>
+        </div>
 
-      <p>
-        Curious about everyday things? Here we explain common questions about
-        life, health, habits, and situations people experience every day.
-      </p>
+        <div class="card">
+          <h3>
+            <a href="tech.html" id="categories-link">Tech Problems</a>
+          </h3>
+          <p>Simple explanations and solutions for common tech issues.</p>
+          <ul>
+            <li>Why does my phone get hot when charging?</li>
+            <li>Why is my WiFi so slow?</li>
+            <li>Why is my laptop fan so loud?</li>
+          </ul>
+        </div>
 
-      <ul>
-        <li>Why do my ears ring?</li>
-        <li>Why do my eyes twitch?</li>
-        <li>Why do lights flicker?</li>
-      </ul>
+        <div class="card">
+          <h3>
+            <a href="howitworks.html" id="categories-link">How It Works</a>
+          </h3>
+          <p>Clear explanations of how everyday things work.</p>
+          <ul>
+            <li>Why does my phone get hot when charging?</li>
+            <li>Why is my WiFi so slow?</li>
+            <li>Why is my laptop fan so loud?</li>
+          </ul>
+        </div>
+      </section>
 
-      <h2 style="margin-top: 20px">2. <a href="techproblems.html" style="color: #5a3e2b;">Tech Problems</a></h2>
+      <section class="latest-articles container">
+        <h2>Latest Articles</h2>
 
-      <p>
-        Technology should make life easier, but problems happen. In this
-        section, we explain common tech issues and how to fix or prevent them.
-      </p>
+        <div class="articles-grid">
+          <article class="article-card">
+            <h3>
+              <a href="why-does-my-phone-get-hot-while-charging.html">
+                Why Does My Phone Get Hot When Charging?
+              </a>
+            </h3>
+            <p>
+              Learn the most common reasons why smartphones heat up during
+              charging and what you can do to prevent it.
+            </p>
+          </article>
 
-      <ul>
-        <li>Why does my phone get hot when charging?</li>
-        <li>Why is my WiFi so slow?</li>
-        <li>Why is my laptop fan so loud?</li>
-      </ul>
+          <article class="article-card">
+            <h3>
+              <a href="why-eyes-twitch.html"> Why Do My Eyes Twitch? </a>
+            </h3>
+            <p>
+              Eye twitching is common and usually harmless. Discover the causes
+              and when to worry.
+            </p>
+          </article>
 
-      <h2 style="margin-top: 20px">3. <a href="howitworks.html" style="color: #5a3e2b;">How It Works</a></h2>
-
-      <p>
-        Ever wondered how everyday technology and systems work? We break down
-        complex ideas into simple explanations anyone can understand.
-      </p>
-
-      <ul>
-        <li>How does wireless charging work?</li>
-        <li>How does GPS know my location?</li>
-        <li>How does the internet work?</li>
-      </ul>
-
-      <h2 style="margin-top: 20px">Latest Articles</h2>
-
-      <ul>
-        <li>
-          <a href="WhyMyPhoneGetHotWhenCharging.html">
-            Why Does My Phone Get Hot When Charging?
-          </a>
-        </li>
-
-        <li>
-          <a href="/everyday-why/why-do-my-ears-ring.html">
-            Why Do My Ears Ring?
-          </a>
-        </li>
-
-        <li>
-          <a href="/how-it-works/how-does-gps-work.html">
-            How Does GPS Work?
-          </a>
-        </li>
-      </ul>
-
-      <p style="margin-top: 20px">
-        The Why Guide is an informational website created to provide simple and
-        clear explanations. All content is for educational purposes only.
-      </p>
+          <article class="article-card">
+            <h3>
+              <a href="why-wifi-is-slow.html"> Why Is My Wi-Fi So Slow? </a>
+            </h3>
+            <p>
+              Slow internet can be frustrating. Learn the main reasons and
+              simple ways to fix it.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <div class="footer-container">
-        <div class="footer-links">
-          <a href="/privacy.html">Privacy Policy</a>
-          <a href="/terms.html">Terms of Use</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+        <div class="footer-about">
+          <h4>TheWhyGuide</h4>
+          <p>
+            The Why Guide helps you understand why things happen and how they
+            work. We explain everyday questions and tech problems in a clear and
+            simple way.
+          </p>
         </div>
-        <p>&copy; 2026 The Why Guide. All rights reserved.</p>
+
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
+
+      <div class="footer-bottom">© 2026 TheWhyGuide. All rights reserved.</div>
     </footer>
 
     <script src="scripts.js"></script>

@@ -18,24 +18,48 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
     <title>TheWhyGuide</title>
   </head>
   <body>
-    <div id="slide-menu" class="slide-menu ">
-      <div>
-        <p>Tech</p>
-      </div>
-    </div>
-
-    <header>
-      <div class="logo">
-        <a href="index.html" id="logo-link">TheWhyGuide</a>
-      </div>
-      <div class="menu">
-        <i class="fa-solid fa-bars" id="btnmenu"></i>
-      </div>
+    <header class="header">
+      <div class="logo">TheWhyGuide</div>
+      <button id="menuBtn">
+        <span class="material-symbols-outlined"> menu</span>
+      </button>
     </header>
 
+    <nav id="mobileMenu" class="mobile-menu">
+      <a href="/">
+        <span class="material-symbols-outlined"> home </span>
+        <span>Home</span>
+      </a>
+
+      <a href="/everyday-why.html">
+        <span class="material-symbols-outlined">help</span>
+        <span>Everyday Why</span>
+      </a>
+
+      <a href="/tech.html">
+        <span class="material-symbols-outlined">smartphone</span>
+        <span>Tech Problems</span>
+      </a>
+
+      <a href="/about.html">
+        <span class="material-symbols-outlined">info</span>
+        <span>About</span>
+      </a>
+
+      <a href="/contact.html">
+        <span class="material-symbols-outlined">mail</span>
+        <span>Contact</span>
+      </a>
+    </nav>
+    <div id="menuOverlay" class="menu-overlay"></div>
     <main class="content">
      <h2 style="margin-top: 20px"><a style="color: #5a3e2b;; text-decoration: none;"  href="everydaywhy.html">Everyday Why</a></h2>
 
@@ -67,16 +91,29 @@
       </ul>
     </main>
 
-    <footer>
+  <footer class="site-footer">
       <div class="footer-container">
-        <div class="footer-links">
-          <a href="/privacy.html">Privacy Policy</a>
-          <a href="/terms.html">Terms of Use</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+        <div class="footer-about">
+          <h4>TheWhyGuide</h4>
+          <p>
+            The Why Guide helps you understand why things happen and how they
+            work. We explain everyday questions and tech problems in a clear and
+            simple way.
+          </p>
         </div>
-        <p>&copy; 2026 The Why Guide. All rights reserved.</p>
+
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
       </div>
+
+      <div class="footer-bottom">© 2026 TheWhyGuide. All rights reserved.</div>
     </footer>
 
     <script src="scripts.js"></script>
