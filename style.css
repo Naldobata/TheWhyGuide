@@ -47,6 +47,10 @@ header {
   
 }
 
+ul{
+  margin-left: 20%;
+  line-height: 30px;
+}
 /* Main content */
 .content {
   max-width: 800px;
@@ -57,6 +61,7 @@ header {
 .content > h1 {
   font-size: 32px;
   color: #5a3e2b;
+  line-height: 1.6;
 }
 .content > h2 {
   font-size: 24px;
