@@ -47,6 +47,26 @@ header {
   
 }
 
+#slide-menu{
+  background-color: rgb(247, 247, 247);
+  
+  height: 100vh;
+  width: 50%;
+  transform: translateX(-110%);
+  border-radius: 0px;
+  position: fixed;
+  z-index: 1;
+  transition: 1s;
+  animation: ease-out;
+  
+}
+
+
+
+#slide-menu.on{
+  transform: translateX(0);
+}
+
 ul{
   margin-left: 20%;
   line-height: 30px;
