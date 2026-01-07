@@ -1,44 +1,40 @@
-const btn = document.getElementById("menuBtn");
-const menu = document.getElementById("mobileMenu");
-
-btn.addEventListener("click", (e) => {
-  menu.classList.toggle("open");
-   e.stopPropagation();
-});
-
-document.addEventListener("click", function (e) {
-  if (menu.classList.contains("open")) {
-    menu.classList.remove("open");
-  }
-});
-
-menu.addEventListener("click", function (e) {
-  e.stopPropagation();
-});
-
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 const overlay = document.getElementById("menuOverlay");
 const menuLinks = mobileMenu.querySelectorAll("a");
+const body = document.body;
 
-function openMenu() {
-  mobileMenu.classList.add("active");
-  overlay.classList.add("active");
-}
+/* ABRIR / FECHAR MENU */
+menuBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  mobileMenu.classList.toggle("open");
+  overlay.classList.toggle("open");
+  body.classList.toggle("menu-open"); // 🔥 BLUR + ANIMAÇÃO
+});
 
-function closeMenu() {
-  mobileMenu.classList.remove("active");
-  overlay.classList.remove("active");
-}
-
-menuBtn.addEventListener("click", openMenu);
+/* FECHAR AO CLICAR NO OVERLAY */
 overlay.addEventListener("click", closeMenu);
 
-/* ITEM ATIVO AUTOMATICO */
-const currentPath = window.location.pathname;
+/* FECHAR AO CLICAR FORA */
+document.addEventListener("click", closeMenu);
+
+/* NÃO FECHAR AO CLICAR DENTRO */
+mobileMenu.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+
+function closeMenu() {
+  mobileMenu.classList.remove("open");
+  overlay.classList.remove("open");
+  body.classList.remove("menu-open"); // 🔥 REMOVE BLUR
+}
+
+/* ITEM ATIVO AUTOMÁTICO */
+const currentPath = window.location.pathname.split("/").pop();
 
 menuLinks.forEach((link) => {
   if (link.getAttribute("href") === currentPath) {
     link.classList.add("active");
   }
 });
+

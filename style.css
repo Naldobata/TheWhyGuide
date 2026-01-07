@@ -314,10 +314,12 @@ ul {
   transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: -6px 0 24px rgba(0, 0, 0, 0.15);
   z-index: 9999;
+ 
 }
 
 .mobile-menu.active {
   right: 0;
+
 }
 
 /* LINKS */
@@ -357,6 +359,11 @@ ul {
   transition: color 0.25s ease;
 }
 
+
+/* ANIMAÇÃO SUAVE DO MENU */
+.mobile-menu {
+  transition: left 0.35s ease-out;
+}
 
 
 
