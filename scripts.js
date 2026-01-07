@@ -38,3 +38,18 @@ menuLinks.forEach((link) => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  const allLinks = document.querySelectorAll(
+    ".desktop-nav a, .mobile-menu a"
+  );
+
+  allLinks.forEach((link) => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
