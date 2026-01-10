@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Category Pages -->
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/everyday-why.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/tech.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/how-it-works.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- How it works Articles -->
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/how-does-air-conditioning-actually-work-in-your-home.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/how-cloud-storage-works.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/how-credit-scores-work.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Everyday Why Articles -->
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/why-does-my-phone-get-hot-while-charging.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/why-is-my-wi-fi-so-slow-even-with-a-good-internet-plan.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/why-does-my-phone-battery-drain-so-fast.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/why-do-i-get-hadaches-when-i-wake-up.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/why-do-my-eyes-twitch-randomly.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/why-do-my-ears-ring-randomly.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Static Pages -->
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/about.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/contact.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/privacy-policy.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://naldobata.github.io/TheWhyGuide/terms-of-service.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
