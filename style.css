@@ -97,7 +97,8 @@ ul {
 }
 
 #categories-link {
-  color: #1a1a1a;
+  color:rgb(62, 62, 215);
+  text-decoration: none;
 }
 .card {
   background: white;
